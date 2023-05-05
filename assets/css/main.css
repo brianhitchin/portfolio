@@ -1687,3 +1687,17 @@ input, select, textarea {
 	padding: 5px;
 	align-items: center;
 }
+
+.pjlist {
+	display: flex;
+	flex-direction: column;
+}
+
+.pjinner {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	border: 2px solid white;
+	margin: 5px;
+	padding: 5px;
+}
