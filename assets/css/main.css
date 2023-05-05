@@ -1695,9 +1695,12 @@ input, select, textarea {
 
 .pjinner {
 	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
-	border: 2px solid white;
+	flex-direction: row;
 	margin: 5px;
 	padding: 5px;
+}
+
+.pjdesc {
+	display: flex;
+	flex-direction: column;
 }
