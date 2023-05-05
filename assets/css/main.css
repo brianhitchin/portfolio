@@ -1684,4 +1684,6 @@ input, select, textarea {
 	border-radius: 10px;
 	border: 2px solid white;
 	margin: 5px;
+	padding: 5px;
+	align-items: center;
 }
