@@ -1706,6 +1706,8 @@ input, select, textarea {
 	flex-wrap: wrap;
 	padding-right: 5px;
 	border-right: 2px solid white;
+	justify-content: center;
+	align-items: center;
 }
 
 .pjimgholder {
