@@ -1698,6 +1698,8 @@ input, select, textarea {
 	flex-direction: row;
 	padding: 5px;
 	margin-bottom: 25px;
+	border-radius: 10px;
+	border: solid 2px white;
 }
 
 .pjdesc {
@@ -1728,6 +1730,8 @@ input, select, textarea {
 	flex-direction: row;
 	padding: 5px;
 	margin-bottom: 25px;
+	border-radius: 10px;
+	border: solid 2px white;
 }
 
 .pjimgholderL {
