@@ -1701,6 +1701,7 @@ input, select, textarea {
 }
 
 .pjdesc {
+	width: 280px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
