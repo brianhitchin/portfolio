@@ -1669,3 +1669,11 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* mine */
+
+.skilllist {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
