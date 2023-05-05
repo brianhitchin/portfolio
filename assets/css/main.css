@@ -1754,3 +1754,11 @@ input, select, textarea {
 	justify-content: center;
 	align-items: center;
 }
+
+.pjdesc:hover {
+	background: white;
+}
+
+.pjdescL:hover {
+	background: white;
+}
