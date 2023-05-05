@@ -1721,8 +1721,7 @@ input, select, textarea {
 }
 
 .pjdescinner {
-	display: flex;
-	justify-content: center;
+	text-align: center;
 }
 
 .pjinnerL {
