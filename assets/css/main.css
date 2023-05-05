@@ -1709,5 +1709,7 @@ input, select, textarea {
 }
 
 .pjimgholder {
-	margin-left: 5px;
+	display: flex;
+	margin-left: 10px;
+	align-items: center;
 }
