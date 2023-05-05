@@ -1703,4 +1703,11 @@ input, select, textarea {
 .pjdesc {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	padding-right: 5px;
+	border-right: 2px solid white;
+}
+
+.pjimgholder {
+	margin-left: 5px;
 }
