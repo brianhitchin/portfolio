@@ -1706,14 +1706,18 @@ input, select, textarea {
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding-right: 5px;
-	border-right: 2px solid white;
 	justify-content: center;
 	align-items: center;
 }
 
 .pjimgholder {
 	display: flex;
-	margin-left: 10px;
+	margin-left: 15px;
 	align-items: center;
+	justify-content: center;
+}
+
+.pjdescinner {
+	display: flex;
 	justify-content: center;
 }
