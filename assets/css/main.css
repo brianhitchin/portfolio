@@ -1450,6 +1450,8 @@ input, select, textarea {
 				width: 4.75rem;
 				height: 4.75rem;
 				line-height: 4.75rem;
+				border-radius: 50%;
+				border: 2px solid white;
 			}
 
 				#header .logo .icon:before {
