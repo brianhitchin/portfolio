@@ -1758,9 +1758,16 @@ input, select, textarea {
 .pjinner:hover {
 	background: white;
 	color: black;
+	font-weight: bold;
 }
 
 .pjinnerL:hover {
 	background: white;
 	color: black;
+	font-weight: bold;	
+}
+
+.hvme:hover {
+	color: black;
+	font-weight: bold;
 }
