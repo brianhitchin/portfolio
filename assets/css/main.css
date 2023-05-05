@@ -1696,7 +1696,7 @@ input, select, textarea {
 .pjinner {
 	display: flex;
 	flex-direction: row;
-	padding: 5px;
+	padding: 10px;
 	margin-bottom: 25px;
 	border-radius: 10px;
 	border: solid 3px white;
@@ -1729,7 +1729,7 @@ input, select, textarea {
 .pjinnerL {
 	display: flex;
 	flex-direction: row;
-	padding: 5px;
+	padding: 10px;
 	margin-bottom: 25px;
 	border-radius: 10px;
 	border: solid 3px white;
