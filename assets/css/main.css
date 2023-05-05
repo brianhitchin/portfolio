@@ -1697,7 +1697,7 @@ input, select, textarea {
 	display: flex;
 	flex-direction: row;
 	padding: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .pjdesc {
@@ -1721,4 +1721,29 @@ input, select, textarea {
 .pjdescinner {
 	display: flex;
 	justify-content: center;
+}
+
+.pjinnerL {
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	margin-bottom: 25px;
+}
+
+.pjimgholderL {
+	display: flex;
+	margin-right: 15px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.pjdescL {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-left: 5px;
+	justify-content: center;
+	align-items: center;
 }
