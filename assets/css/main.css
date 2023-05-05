@@ -1707,6 +1707,7 @@ input, select, textarea {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	padding-left: 5px;
 	padding-right: 5px;
 	justify-content: center;
 	align-items: center;
@@ -1747,6 +1748,7 @@ input, select, textarea {
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding-left: 5px;
+	padding-right: 5px;
 	justify-content: center;
 	align-items: center;
 }
