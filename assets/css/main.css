@@ -1769,6 +1769,7 @@ input, select, textarea {
 
 .hvme {
 	font-size: 30px;
+	font-weight: bold;
 }
 
 .hvme:hover {
