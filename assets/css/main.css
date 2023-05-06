@@ -1759,12 +1759,14 @@ input, select, textarea {
 	background: white;
 	color: black;
 	font-weight: bold;
+	border: 3px solid black;
 }
 
 .pjinnerL:hover {
 	background: white;
 	color: black;
 	font-weight: bold;	
+	border: 3px solid black;
 }
 
 .hvme {
