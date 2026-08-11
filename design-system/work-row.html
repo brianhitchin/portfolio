@@ -1,0 +1,41 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Work row</title>
+<style>
+  :root {
+    --background: #f6f2e9;
+    --foreground: #18150f;
+    --muted: #6b6355;
+    --border-strong: rgba(24, 21, 15, 0.3);
+    --accent: #b3391a;
+    --font-serif: Georgia, "Iowan Old Style", Palatino, serif;
+    --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-serif); padding: 32px; }
+  .row { display: grid; grid-template-columns: 56px 1fr 220px; gap: 24px; align-items: start; border-top: 1px solid var(--foreground); padding-top: 20px; }
+  .n { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+  h3 { font-size: 24px; font-weight: 400; margin: 0 0 8px; }
+  p { font-family: var(--font-mono); font-size: 13px; color: var(--muted); margin: 0 0 12px; line-height: 1.6; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { border: 1px solid var(--border-strong); padding: 4px 9px; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+  .metric { display: flex; flex-direction: column; gap: 2px; }
+  .metric .value { font-size: 40px; color: var(--accent); line-height: 1; }
+  .metric .label { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <span class="n">01</span>
+    <div>
+      <h3>AI-Assisted Access Recommendation Engine</h3>
+      <p>Rule-based policy paired with a contextual-bandit model — cutting mean ticket-resolution time by ~90%.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Contextual bandits</span><span class="tag">Spring Boot</span></div>
+    </div>
+    <div class="metric"><span class="value">−90%</span><span class="label">Mean ticket resolution</span></div>
+  </div>
+</body>
+</html>

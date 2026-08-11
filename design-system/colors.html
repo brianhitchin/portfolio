@@ -1,0 +1,38 @@
+<!-- @dsCard group="Colors" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Color tokens</title>
+<style>
+  :root {
+    --background: #f6f2e9;
+    --foreground: #18150f;
+    --muted: #6b6355;
+    --border: rgba(24, 21, 15, 0.14);
+    --border-strong: rgba(24, 21, 15, 0.3);
+    --accent: #b3391a;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-mono); padding: 32px; }
+  h1 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+  .swatch { border: 1px solid var(--border-strong); }
+  .fill { height: 80px; }
+  .label { padding: 10px 12px; font-size: 11px; }
+  .name { font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+  .value { color: var(--muted); font-size: 11px; margin-top: 2px; }
+</style>
+</head>
+<body>
+  <h1>Color tokens — Editorial</h1>
+  <div class="grid">
+    <div class="swatch"><div class="fill" style="background: var(--background);"></div><div class="label"><div class="name">Background</div><div class="value">#f6f2e9</div></div></div>
+    <div class="swatch"><div class="fill" style="background: var(--foreground);"></div><div class="label"><div class="name">Foreground</div><div class="value">#18150f</div></div></div>
+    <div class="swatch"><div class="fill" style="background: var(--muted);"></div><div class="label"><div class="name">Muted</div><div class="value">#6b6355</div></div></div>
+    <div class="swatch"><div class="fill" style="background: var(--accent);"></div><div class="label"><div class="name">Accent (rust)</div><div class="value">#b3391a</div></div></div>
+    <div class="swatch"><div class="fill" style="background: var(--background); border-bottom: 2px solid var(--border-strong);"></div><div class="label"><div class="name">Border strong</div><div class="value">rgba(24,21,15,.3)</div></div></div>
+  </div>
+</body>
+</html>

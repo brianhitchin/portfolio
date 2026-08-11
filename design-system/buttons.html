@@ -1,0 +1,48 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Buttons &amp; links</title>
+<style>
+  :root {
+    --background: #f6f2e9;
+    --foreground: #18150f;
+    --muted: #6b6355;
+    --border-strong: rgba(24, 21, 15, 0.3);
+    --accent: #b3391a;
+    --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-mono); padding: 32px; }
+  .row { display: flex; align-items: center; gap: 16px; padding: 20px 0; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--foreground); color: var(--background);
+    padding: 13px 24px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;
+    border: none; cursor: pointer;
+  }
+  .btn-primary.hover { background: var(--accent); }
+  .btn-secondary {
+    background: transparent; color: var(--foreground);
+    border: 1px solid var(--foreground); padding: 12px 24px;
+    font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer;
+  }
+  .link { color: var(--muted); font-size: 12px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; }
+  .link.hover, .link:hover { color: var(--accent); }
+  .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.14em; }
+  .dot { width: 6px; height: 6px; border-radius: 999px; background: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <button class="btn-primary">View the work</button>
+    <button class="btn-primary hover">View the work (hover)</button>
+    <button class="btn-secondary">Get in touch</button>
+    <a class="link" href="#">Nav link</a>
+    <a class="link hover" href="#">Nav link (hover)</a>
+  </div>
+  <div class="row">
+    <span class="pill"><span class="dot"></span> Open to new opportunities</span>
+  </div>
+</body>
+</html>

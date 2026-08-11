@@ -1,0 +1,75 @@
+<!-- @dsCard group="Style Directions" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Direction B — Terminal</title>
+<style>
+  :root {
+    --background: #060807;
+    --panel: #0b0f0c;
+    --foreground: #d8f2df;
+    --muted: #62786a;
+    --border: rgba(216, 242, 223, 0.12);
+    --accent: #39ff88;
+    --amber: #ffb454;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-mono); }
+  .window { max-width: 1100px; margin: 32px auto; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .titlebar { background: var(--panel); padding: 10px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); }
+  .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--muted); }
+  .dot:nth-child(1) { background: #ff5f56; }
+  .dot:nth-child(2) { background: #ffbd2e; }
+  .dot:nth-child(3) { background: #27c93f; }
+  .path { margin-left: 12px; font-size: 12px; color: var(--muted); }
+  main { padding: 48px 40px 64px; }
+  nav { display: flex; gap: 24px; font-size: 12px; color: var(--muted); margin-bottom: 48px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a.active, nav a:hover { color: var(--accent); }
+  .prompt { color: var(--muted); font-size: 13px; margin: 0 0 8px; }
+  .prompt .user { color: var(--accent); }
+  h1 { font-size: 40px; font-weight: 500; line-height: 1.3; margin: 0 0 20px; }
+  h1 .cmd { color: var(--muted); }
+  h1 .accent { color: var(--accent); }
+  h1 .cursor { display: inline-block; width: 10px; height: 34px; background: var(--accent); vertical-align: -6px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  p.sub { color: var(--muted); font-size: 14px; max-width: 560px; line-height: 1.7; margin: 0 0 32px; }
+  .row { display: flex; gap: 16px; }
+  .btn { border: 1px solid var(--accent); color: var(--accent); padding: 10px 20px; font-size: 13px; text-decoration: none; border-radius: 4px; }
+  .btn.ghost { border-color: var(--border); color: var(--foreground); }
+  .log { margin-top: 56px; border-top: 1px solid var(--border); padding-top: 24px; }
+  .entry { display: flex; gap: 16px; padding: 10px 0; font-size: 13px; }
+  .entry .tag { color: var(--amber); flex-shrink: 0; width: 90px; }
+  .entry .desc { color: var(--muted); }
+  .entry .desc b { color: var(--foreground); font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="titlebar">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="path">brian@portfolio — zsh — 100×32</span>
+    </div>
+    <main>
+      <nav>
+        <a class="active" href="#">~/work</a>
+        <a href="#">~/about</a>
+        <a href="#">~/contact</a>
+      </nav>
+      <p class="prompt"><span class="user">brian@seattle</span> ~ $ whoami</p>
+      <h1><span class="cmd">&gt;</span> Full-stack engineer building <span class="accent">applied-AI</span> platforms<span class="cursor"></span></h1>
+      <p class="sub">Production systems that serve thousands of users — access control, auth infrastructure, and LLM-powered tooling at T-Mobile.</p>
+      <div class="row">
+        <a class="btn" href="#">./view-work.sh</a>
+        <a class="btn ghost" href="#">contact --email</a>
+      </div>
+      <div class="log">
+        <div class="entry"><span class="tag">[ml]</span><span class="desc"><b>Access Recommendation Engine</b> — contextual bandit, −90% ticket time</span></div>
+        <div class="entry"><span class="tag">[auth]</span><span class="desc"><b>JWT Gateway</b> — 10M+ calls, zero incidents</span></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

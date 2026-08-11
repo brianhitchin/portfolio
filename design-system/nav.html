@@ -1,0 +1,43 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Navigation</title>
+<style>
+  :root {
+    --background: #f6f2e9;
+    --foreground: #18150f;
+    --muted: #6b6355;
+    --border: rgba(24, 21, 15, 0.14);
+    --accent: #b3391a;
+    --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-mono); }
+  header { border-bottom: 1px solid var(--border); }
+  nav { max-width: 1000px; margin: 0 auto; display: flex; align-items: baseline; justify-content: space-between; padding: 20px 32px; }
+  .brand { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; }
+  .links { display: flex; gap: 28px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+  a { color: var(--muted); text-decoration: none; }
+  a.accent { color: var(--accent); }
+  a:hover { color: var(--accent); }
+  .spacer { height: 160px; }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="brand">Brian Hitchin</span>
+      <div class="links">
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">LinkedIn</a>
+        <a href="#" class="accent">Résumé →</a>
+      </div>
+    </nav>
+  </header>
+  <div class="spacer"></div>
+</body>
+</html>

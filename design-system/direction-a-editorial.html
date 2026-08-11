@@ -1,0 +1,67 @@
+<!-- @dsCard group="Style Directions" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Direction A — Editorial</title>
+<style>
+  :root {
+    --background: #f6f2e9;
+    --foreground: #18150f;
+    --muted: #6b6355;
+    --border: rgba(24, 21, 15, 0.14);
+    --accent: #b3391a;
+    --font-serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", serif;
+    --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-serif); }
+  header { border-bottom: 1px solid var(--border); }
+  nav { max-width: 1100px; margin: 0 auto; display: flex; align-items: baseline; justify-content: space-between; padding: 20px 32px; }
+  .brand { font-family: var(--font-mono); font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; }
+  ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+  a { color: var(--muted); text-decoration: none; }
+  a:hover { color: var(--accent); }
+  main { max-width: 1100px; margin: 0 auto; padding: 72px 32px 96px; }
+  .index { font-family: var(--font-mono); font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 20px; }
+  h1 { font-size: 58px; font-weight: 400; line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 28px; max-width: 780px; }
+  h1 em { font-style: italic; color: var(--accent); }
+  p.sub { font-family: var(--font-mono); font-size: 14px; color: var(--muted); max-width: 480px; line-height: 1.6; margin: 0 0 40px; }
+  .row { display: flex; align-items: center; gap: 20px; }
+  .btn { border: 1px solid var(--foreground); color: var(--foreground); background: transparent; padding: 12px 22px; font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; text-decoration: none; }
+  .btn.solid { background: var(--foreground); color: var(--background); }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 64px 0 40px; }
+  .card { border-top: 1px solid var(--foreground); padding-top: 20px; display: grid; grid-template-columns: 60px 1fr auto; gap: 24px; align-items: baseline; }
+  .card .n { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+  .card h3 { font-size: 24px; font-weight: 400; margin: 0 0 6px; }
+  .card p { font-family: var(--font-mono); font-size: 13px; color: var(--muted); margin: 0; max-width: 460px; line-height: 1.5; }
+  .card .tag { font-family: var(--font-mono); font-size: 11px; color: var(--accent); text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="brand">Brian Hitchin</span>
+      <ul><li><a href="#">Work</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main>
+    <p class="index">01 — Full-Stack Engineer</p>
+    <h1>I build platforms where <em>applied AI</em> meets thoughtful engineering.</h1>
+    <p class="sub">Brian Hitchin — Seattle, WA. Production systems, access-control platforms, and LLM-powered tooling for teams that serve thousands of users.</p>
+    <div class="row">
+      <a class="btn solid" href="#">View the work</a>
+      <a class="btn" href="#">Get in touch</a>
+    </div>
+    <hr class="divider" />
+    <div class="card">
+      <span class="n">01</span>
+      <div>
+        <h3>AI-Assisted Access Recommendation Engine</h3>
+        <p>Rule-based policy paired with a contextual-bandit model — cut ticket resolution time by ~90%.</p>
+      </div>
+      <span class="tag">Applied ML</span>
+    </div>
+  </main>
+</body>
+</html>

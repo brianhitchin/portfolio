@@ -1,0 +1,65 @@
+<!-- @dsCard group="Style Directions" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Direction C — Swiss Grid</title>
+<style>
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+    --muted: #6e6e6e;
+    --border: #0a0a0a;
+    --accent: #0026ff;
+    --font-sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-sans); }
+  header { border-bottom: 2px solid var(--border); }
+  nav { display: grid; grid-template-columns: 1fr auto; padding: 20px 32px; align-items: center; }
+  .brand { font-weight: 700; font-size: 15px; letter-spacing: -0.01em; }
+  ul { list-style: none; display: flex; gap: 32px; margin: 0; padding: 0; font-size: 13px; font-weight: 600; }
+  a { color: var(--foreground); text-decoration: none; }
+  a:hover { color: var(--accent); }
+  main { display: grid; grid-template-columns: 90px 1fr 260px; border-bottom: 2px solid var(--border); }
+  .rail { border-right: 1px solid var(--border); padding: 40px 0; writing-mode: vertical-rl; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: flex; align-items: flex-end; justify-content: center; }
+  .content { padding: 56px 40px; border-right: 1px solid var(--border); }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 20px; }
+  h1 { font-size: 52px; font-weight: 800; letter-spacing: -0.03em; line-height: 0.98; margin: 0 0 28px; text-transform: uppercase; }
+  p.sub { font-size: 16px; color: var(--muted); max-width: 420px; line-height: 1.5; margin: 0 0 32px; }
+  .row { display: flex; gap: 0; }
+  .btn { border: 2px solid var(--border); background: var(--foreground); color: var(--background); padding: 14px 24px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; text-decoration: none; }
+  .btn.outline { background: var(--background); color: var(--foreground); border-left: none; }
+  .side { padding: 56px 24px; }
+  .stat { border-bottom: 1px solid var(--border); padding: 16px 0; }
+  .stat .n { font-size: 32px; font-weight: 800; }
+  .stat .l { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="brand">BRIAN HITCHIN</span>
+      <ul><li><a href="#">WORK</a></li><li><a href="#">ABOUT</a></li><li><a href="#">CONTACT</a></li></ul>
+    </nav>
+  </header>
+  <main>
+    <div class="rail">SEATTLE, WA — 2026</div>
+    <div class="content">
+      <p class="eyebrow">Full-Stack Engineer</p>
+      <h1>Systems that put AI to work</h1>
+      <p class="sub">Production platforms, access control, and applied-AI tooling shipped for teams serving thousands of users.</p>
+      <div class="row">
+        <a class="btn" href="#">VIEW WORK</a>
+        <a class="btn outline" href="#">CONTACT</a>
+      </div>
+    </div>
+    <div class="side">
+      <div class="stat"><div class="n">2+</div><div class="l">Years experience</div></div>
+      <div class="stat"><div class="n">10M+</div><div class="l">API calls served</div></div>
+      <div class="stat"><div class="n">90%</div><div class="l">Faster resolution</div></div>
+    </div>
+  </main>
+</body>
+</html>
